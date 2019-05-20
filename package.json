@@ -1,0 +1,24 @@
+{
+  "name": "form-data-manager",
+  "version": "1.0.0",
+  "description": "Simple data sets management intended for forms data validation and submission.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktourvas/form-data.git"
+  },
+  "author": "k.tourvas <k.tourvas@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ktourvas/form-data/issues"
+  },
+  "homepage": "https://github.com/ktourvas/form-data#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "es6-promise": "^4.2.6"
+  },
+  "devDependencies": {}
+}
