@@ -1,2 +1,13 @@
-export { required } from './required';
-export { integer } from './integer';
+export {
+    required,
+    letters,
+    integer,
+    email,
+    decimal,
+    numbers,
+    greekphone,
+    greekmobile,
+    greeklandline,
+    greekcypriotmobile,
+    greekcypriotmobile10
+} from './common';

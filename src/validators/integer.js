@@ -1,1 +1,0 @@
-export const integer = (value) => Number.isInteger(value);

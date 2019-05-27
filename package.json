@@ -4,7 +4,7 @@
   "description": "Simple data sets management intended for forms data validation and submission.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,10 @@
     "axios": "^0.18.0",
     "es6-promise": "^4.2.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  }
 }
