@@ -8,23 +8,24 @@ test('common form validations', () => {
     expect(required('')).toBeFalsy();
     expect(required('akjshdahjsa')).toBeTruthy();
 
-    expect(letters('')).toBeFalsy();
+    expect(letters('')).toBeTruthy();
     expect(letters('d3df4d24d3f4g4')).toBeFalsy();
     expect(letters('lakskhde')).toBeTruthy();
 
-    expect(numbers('')).toBeFalsy();
+    expect(numbers('')).toBeTruthy();
     expect(numbers('d3df4d24d3f4g4')).toBeFalsy();
     expect(numbers('3821241278')).toBeTruthy();
 
-    expect(integer('')).toBeFalsy();
+    expect(integer('')).toBeTruthy();
     expect(integer('3141.28')).toBeFalsy();
     expect(integer('213')).toBeFalsy();
     expect(integer(213)).toBeTruthy();
 
-    expect(decimal('')).toBeFalsy();
+    expect(decimal('')).toBeTruthy();
     expect(decimal('31413')).toBeFalsy();
     expect(decimal('213.23')).toBeTruthy();
 
+    expect(email('')).toBeTruthy();
     expect(email('kasjadsa.assasa@ksajsasa')).toBeFalsy();
     expect(email('eldude@gmail.com')).toBeTruthy();
 
@@ -33,15 +34,20 @@ test('common form validations', () => {
 
 test('correct phone input values', () => {
 
+    expect(greekphone('')).toBeTruthy();
     expect(greekphone('2108788776')).toBeTruthy();
 
+    expect(greekmobile('')).toBeTruthy();
     expect(greekmobile('6962778877')).toBeTruthy();
 
+    expect(greeklandline('')).toBeTruthy();
     expect(greeklandline('2109988776')).toBeTruthy();
 
+    expect(greekcypriotmobile('')).toBeTruthy();
     expect(greekcypriotmobile('6962778877')).toBeTruthy();
     expect(greekcypriotmobile('35799887765')).toBeTruthy();
 
+    expect(greekcypriotmobile10('')).toBeTruthy();
     expect(greekcypriotmobile10('6962778877')).toBeTruthy();
     expect(greekcypriotmobile10('5799887765')).toBeTruthy();
 
