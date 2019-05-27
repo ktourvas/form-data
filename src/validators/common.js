@@ -1,4 +1,4 @@
-export const required = (value) => value.length > 0;
+export const required = (value) => value !== null && value.toString().length && value.toString() !== 'undefined';
 
 export const email = (value) => value.length ? /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(value) : true;
 export const letters = (value) => value.length ? /^[A-Za-z]+$/.test(value) : true;
