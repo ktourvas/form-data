@@ -10,7 +10,10 @@ export default class Validator {
 
             let result = true;
 
-            Object.values(this.data[item].rules).map( validator => {
+            Object.keys(this.data[item].rules).map( ( name ) => {
+
+                let validator = this.data[item].rules[name];
+
                 if(!validator(value)) {
 
                     if(typeof result == 'boolean') {
