@@ -1,6 +1,6 @@
 {
   "name": "form-data-manager",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Simple data sets management intended for forms data validation and submission.",
   "main": "src/index.js",
   "scripts": {
